@@ -6,7 +6,7 @@
       	prevented this Pic from saving
       </h2>
       <ul>
-        <% @pic.errors.full_message.each do |msg| %>
+        <% @pic.errors.full_messages.each do |msg| %>
           <li>
             <%= msg %>
           </li>
@@ -23,6 +23,6 @@
     <%= f.input :description, input_html: { class:'form-control'} %>
   </div>
 
-  	<%= f.button :submit %>
+  	<%= f.button :submit, class: 'btn btn-info' %>
 
 <% end %>
