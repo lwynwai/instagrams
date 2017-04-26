@@ -42,7 +42,7 @@ class PicsController < ApplicationController
 		@pic.upvote_by current_user
 		redirect_to :back
 	end
-	
+
 	private
 
 	def pic_params
@@ -53,4 +53,4 @@ class PicsController < ApplicationController
 		@pic = Pic.find(params[:id])
 	end
 
-end 
+end
